@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.unimelb.swen.ll.business.dao.ChampionDao">
+
+    <select id="getChampionByChampionId" resultType="edu.unimelb.swen.ll.business.pojo.po.BaseChampion">
+        select *
+        from student tf
+        where tf.id = #{championId}
+    </select>
+
+</mapper>
